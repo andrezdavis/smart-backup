@@ -3,11 +3,11 @@ Data loss can be a major headache for businesses, leading to lost revenue, compl
 
 A smart backup system like this helps businesses:
 
-1. Prevent data loss from crashes or cyberattacks
-2. Stay compliant with financial regulations
-3. Maintain customer trust by ensuring payment records are always accurate
-4. Save time and effort by automating backups
-5. By using EventBridge, Lambda, and S3, businesses get a reliable, hands-off backup system that keeps critical payment data safe and accessible.
+1. Prevent data loss from crashes
+2. Improve System Latency with asynchronous backup processing
+3. Keep writes loosely coupled
+4. Maintain customer trust by ensuring payment records are always accurate
+5. Save time and effort by automating backups
 ## Application Flow
 Application Sends a Payment Write Event
 - The payment application writes a processed payment to some MySQL/PostgreSQL DB then sends an event to AWS EventBridge via the <code>put_events()</code> API call.
