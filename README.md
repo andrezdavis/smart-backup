@@ -27,5 +27,27 @@ EventBridge receives the event and checks rules to determine if the event matche
 ```
 The event is routed to an AWS Lambda function once the lambda is triggered.
 
-Lambda receives the event and extracts payment data from the detail field. It saves the extracted payment data to an Amazon S3 backup storage.
+Lambda receives the event and extracts payment data from the detail field.
+It saves the extracted payment data to an Amazon S3 backup storage.
 The backup is available in S3 for retrieval in case of failures.
+
+Pictures shown below to illustrate AWS flow.
+
+
+![postResponse](https://github.com/user-attachments/assets/22bfea49-9198-4480-9c03-ef51a9a29bf4)
+
+-----
+
+![EventBridgepic](https://github.com/user-attachments/assets/46fc2f7e-2539-49fe-a328-318b75c3aeca)
+
+-----
+
+![InvokeLambda](https://github.com/user-attachments/assets/5036944b-d6e5-407f-9310-68612cd9c3c0)
+
+-----
+
+![LambdaMetrics](https://github.com/user-attachments/assets/be3fa613-d70b-4199-bba4-7e30fa4448bd)
+
+-----
+
+![eventbucket](https://github.com/user-attachments/assets/6034ca9c-4994-4c9e-bbb7-a8dd96d7b754)
